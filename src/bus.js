@@ -133,7 +133,9 @@ function Bus(name, options) {
                         callback: (data) => {
                             self.subject.next({
                                 name: id,
-                                data: data
+                                data: {
+                                    data: data
+                                }
                             });
                         }
                     }

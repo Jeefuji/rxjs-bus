@@ -2,7 +2,7 @@
   "name": "rxjs-bus",
   "version": "0.0.1",
   "description": "Wrapper on top of RXJs to propose a versatile and easy to use bus",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/jeefuji/rxjs-bus",
   "author": "Jean-Hugues Gilbert <gilbert.jeanhugues@gmail.com>",
   "license": "Apache-2.0",
