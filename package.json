@@ -1,6 +1,6 @@
 {
   "name": "rxjs-bus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Wrapper on top of RXJs to propose a versatile and easy to use bus",
   "main": "dist/rxjs-bus.js",
   "repository": {
