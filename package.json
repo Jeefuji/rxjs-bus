@@ -3,10 +3,27 @@
   "version": "0.0.3",
   "description": "Wrapper on top of RXJs to propose a versatile and easy to use bus",
   "main": "dist/index.js",
-  "repository": "https://github.com/jeefuji/rxjs-bus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeefuji/rxjs-bus.git"
+  },
+  "keywords": [
+    "disposer",
+    "disposable",
+    "dispowser",
+    "releasing",
+    "release",
+    "clean",
+    "cleanup",
+    "event",
+    "events"
+  ],
   "author": "Jean-Hugues Gilbert <gilbert.jeanhugues@gmail.com>",
   "license": "Apache-2.0",
-  "sideEffects": false,
+  "bugs": {
+    "url": "https://github.com/jeefuji/rxjs-bus/issues"
+  },
+  "homepage": "https://github.com/jeefuji/rxjs-bus#readme",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack -p --config 'build/webpack.config.js'",
     "dev": "cross-env NODE_ENV=development webpack --config 'build/webpack.config.js'",
