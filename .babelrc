@@ -1,0 +1,14 @@
+{
+    "ignore": [
+        "node_modules/**"
+    ],
+    "plugins": ["lodash", "transform-object-rest-spread", "array-includes"],
+    "presets": [
+        ["env", {
+            "modules": false,
+            "targets": {
+                "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+            }
+        }]
+    ]
+}
