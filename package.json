@@ -2,7 +2,7 @@
   "name": "rxjs-bus",
   "version": "0.1.0",
   "description": "Wrapper on top of RXJs to propose a versatile and easy to use bus",
-  "main": "dist/index.js",
+  "main": "dist/rxjs-bus.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeefuji/rxjs-bus.git"
