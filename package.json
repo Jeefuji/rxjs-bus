@@ -8,10 +8,13 @@
     "url": "git+https://github.com/jeefuji/rxjs-bus.git"
   },
   "keywords": [
-    "rxjs",
     "bus",
     "rxjs-bus",
     "event",
+    "rxjs",
+    "rx",
+    "reactivex",
+    "reactive",
     "scheduling",
     "poe"
   ],

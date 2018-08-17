@@ -1,7 +1,7 @@
 import './common.test'
 import uuid from "uuid/v4";
 import _ from "lodash";
-import { BusManager } from '../lib/rxjs-bus';
+import { BusManager } from '@/index';
 
 describe('BusManager', () => {
     beforeEach(() => {
