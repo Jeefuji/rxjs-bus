@@ -8,15 +8,12 @@
     "url": "git+https://github.com/jeefuji/rxjs-bus.git"
   },
   "keywords": [
-    "disposer",
-    "disposable",
-    "dispowser",
-    "releasing",
-    "release",
-    "clean",
-    "cleanup",
+    "rxjs",
+    "bus",
+    "rxjs-bus",
     "event",
-    "events"
+    "scheduling",
+    "poe"
   ],
   "author": "Jean-Hugues Gilbert <gilbert.jeanhugues@gmail.com>",
   "license": "Apache-2.0",
