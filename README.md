@@ -96,7 +96,7 @@ The possible values are :
 
 Default value used is null, which represent a synchronous event delivery.
 
-```javacript 
+```javascript 
   import { BusManager } from "rxjs-bus";
   
   let bus = BusManager.get("global");
