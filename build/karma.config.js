@@ -1,7 +1,7 @@
 const wpConf = require('./webpack.config')
 
 // Webpack customization
-var webpack = wpConf[0];
+var webpack = wpConf;
 webpack.devtool = 'inline-source-map'
 webpack.module.rules = webpack.module.rules.concat([
     // instrument only testing sources with Istanbul

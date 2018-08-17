@@ -2,7 +2,7 @@
   "name": "rxjs-bus",
   "version": "0.1.4",
   "description": "Wrapper on top of RXJs to propose a versatile and easy to use bus",
-  "main": "dist/rxjs-bus.js",
+  "main": "lib/rxjs-bus.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeefuji/rxjs-bus.git"
@@ -69,6 +69,7 @@
     "mocha": "^5.2.0",
     "sinon": "^6.1.5",
     "sinon-chai": "^3.2.0",
+    "unminified-webpack-plugin": "^2.0.0",
     "webpack": "^4.16.5",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.1.0",
