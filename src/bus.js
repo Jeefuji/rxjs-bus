@@ -67,6 +67,11 @@ function Bus(name, options) {
     }
 
     return {
+        dispose: function () {
+            if(this.subject) {
+                this.subject.dispose();
+            }
+        },
         raw: function (eventName) {
             log("[Raw] @ Raw subscribing to " + eventName);
             return on(eventName);
@@ -125,8 +130,6 @@ function Bus(name, options) {
 
                     log(`[Emit] Requiring ack with id ${id}`)
 
-                    s.subscribe(options.ack.callback);
-
                     // fill info for receiver methods
                     emittedObject.ack = {
                         name: id,
@@ -155,8 +158,16 @@ function BusManager() {
     var vm = this;
     vm.bus = {};
 
+    const scheduler = {
+        asap: Scheduler.asap,
+        async: Scheduler.async,
+        queue: Scheduler.queue,
+        animationFrame: Scheduler.animationFrame
+    };
+
     // Public instance
     var instance = {
+        scheduler: scheduler,
         configure: function(busList) {
             _.each(busList.bus, function (c) {
                 if (c) {
