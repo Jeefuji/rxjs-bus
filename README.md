@@ -64,7 +64,7 @@ Once allow to automatically unsubscribe after receiving one event.
 ```
 
 #### Raw
-Expose directly RxJS api to do even more awesome things with your event!
+Expose directly RxJS api to do even more awesome things with your events!
 ```javascript
   import { BusManager } from "rxjs-bus";
   import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
@@ -84,18 +84,17 @@ Expose directly RxJS api to do even more awesome things with your event!
 ```
 
 Please consult [RxJS documentation](https://www.learnrxjs.io/operators/) for more awesome event management!
-Exciting isn't it?!
 
 #### Scheduling
 It is possible to define how the event will be distributed.
-The possible value are :
+The possible values are :
 * null
 * asap
 * async
 * queue
 * animationFrame
 
-Default value used in bus is null, which represent a synchronous event delivery.
+Default value used is null, which represent a synchronous event delivery.
 
 ```javacript 
   import { BusManager } from "rxjs-bus";
@@ -106,10 +105,10 @@ Default value used in bus is null, which represent a synchronous event delivery.
   });
 ```
 
-For more informations, please check [RxJS 6 documentation](https://github.com/ReactiveX/rxjs/blob/master/doc/scheduler.md#scheduler-types).
+For more information, please check [RxJS 6 documentation](https://github.com/ReactiveX/rxjs/blob/master/doc/scheduler.md#scheduler-types).
 
 #### Acknowledge
-Sometimes, we want to have some informations back after sending an event... Ack is here to help you with that, without the hassle of creating event id, or managing callback event lifetime!
+Sometimes, we want to have information back after sending an event... Ack is here to help you with that, without the hassle of creating a dedicated event id, or managing callback lifetime!
 
 ```javascript
   import { BusManager } from "rxjs-bus";
